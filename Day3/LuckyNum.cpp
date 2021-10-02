@@ -1,34 +1,27 @@
-#include <bits/stdc++.h>
-#define lli unsigned long long int
+#include <iostream>
+
 using namespace std;
 
-bool isLucky(lli num){
-    lli temp = num;
-    lli count = 0;
-    while(num != 0){
-        int rem = num % 10;
-        if(rem == 4 || rem == 7) count++;
-        num /= 10;
-    }
-    num = temp;
-    while(num != 0 && count > 0){
-        int rem = num % 10;
-        if(rem == count) return true;
-        num /= 10;
-    }
-    return false;
-}
-
-int main(){
-    // #ifndef ONLINE_JUDGE
-    //     freopen("input.txt", "r", stdin);
-    // #endif
-    
-    lli n;
+int main()
+{
+    long long n;
     cin >> n;
-
-    if(isLucky(n)) cout << "YES";
-    else cout << "NO";
-
+    int count = 0;
+    while (n != 0)
+    {
+        if (n % 10 == 4 || n % 10 == 7)
+        {
+            count += 1;
+        }
+        n /= 10;
+    }
+    if (count == 4 || count == 7)
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
     return 0;
 }
