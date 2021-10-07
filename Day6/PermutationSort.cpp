@@ -16,6 +16,16 @@ lli Solve(vector<lli> arr){
     return 2;
 }
 
+void solve(){
+    lli n;
+    cin >> n;
+    vector<lli> arr(n);
+    for (lli i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << Solve(arr) << endl;
+}
 
 int main(){
     // #ifndef ONLINE_JUDGE
@@ -25,14 +35,7 @@ int main(){
     lli t;
     cin >> t;
     while(t--){
-        lli n;
-        cin >> n;
-        vector<lli> arr(n);
-        for (lli i = 0; i < n; i++)
-        {
-            cin >> arr[i];
-        }
-        cout << Solve(arr) << endl;
+        solve();
     }
     return 0;
 }
