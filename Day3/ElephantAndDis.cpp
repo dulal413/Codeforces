@@ -2,11 +2,7 @@
 #define lli long long int
 using namespace std;
 
-int main(){
-    // #ifndef ONLINE_JUDGE
-    //     freopen("input.txt", "r", stdin);
-    // #endif
-
+void solve(){
     lli n , step = 0;
     cin >> n;
 
@@ -16,5 +12,9 @@ int main(){
     }
 
     cout << step;
+}
+
+int main(){
+    solve();
     return 0;
 }
