@@ -16,6 +16,7 @@ int main(){
     int count = 0;
     for(int i = 0 ; i < 26 ; i++){
         if(arr[i] > 0) count++;
+        //increment count
     }
     
     if(count % 2 == 0) cout << "CHAT WITH HER!";
