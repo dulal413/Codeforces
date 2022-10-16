@@ -16,6 +16,7 @@ string sortString(string str){
         }
     }
     return s1;
+    //returns s1
 }
 
 int main(){
